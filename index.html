@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/ios-filled/100/partly-cloudy-day--v1.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+    <title>AajKaWeather</title>
+</head>
+
+<body>
+    <header>
+        <logo>
+            AajKaWeather
+        </logo>
+       
+    </header>
+
+    <main>
+        <welcome>Welcome to AajKaWeather</welcome>
+        <div id="search-container">
+            <input type="text" id="location" placeholder="Enter location">
+            <span id="search-btn"> ➜</span>
+        </div>
+
+        <div id="locationName">
+            <img width="55" height="55" src="https://img.icons8.com/3d-fluency/94/place-marker.png"
+                alt="place-marker" />
+            <p>Kolkata, WB</p>
+        </div>
+
+        <section id="currentWeather">
+            <div id=sectionMain>
+                <div id="mainInfo">
+                    <div id="weatherIcon">
+                        <img src="./assets/cloud.png" alt="" srcset="">
+                    </div>
+
+                    <div id="tempMain">
+                        <div id="temperature" title="Temperature">
+                            <div id="value">
+                                <p>33</p>
+                            </div>
+                            <div id="unit">
+                                <p>°C</p>
+                            </div>
+                        </div>
+                        <div id="condition">
+                            <p>Partially Cloudy</p>
+                        </div>
+                        <div id="temperatureMaxMin">
+                            <div id="temperatureMax" title="Maximum Temperature">
+                                <div id="value">
+                                    <p>37</p>
+                                </div>
+                                <div id="unit">
+                                    <p>°C</p>
+                                </div>
+                            </div>
+                            <span>/</span>
+                            <div id="temperatureMin" title="Minimum Temperature">
+                                <div id="value">
+                                    <p>30</p>
+                                </div>
+                                <div id="unit">
+                                    <p>°C</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="description" title="A short description">
+                            <p>This is a romantic weather</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="ctas">
+                    <button id="dailyforecast" title="Click to see forecast of each day"> Daily Forecast ➜</button>
+                    <button id="hourlyforecast" title="24 hrs forecast format"> Hourly Forecast ➜</button>
+                </div>
+            </div>
+
+
+            <div id="others">
+
+                <div id="submain">
+                    <div id="visibility">
+                        <div id="visibilityImg">
+                            <img width="35" height="35" src="https://img.icons8.com/stickers/100/visible.png"
+                                alt="sunrise" />
+                        </div>
+                        <div id="value">
+                            <p>22</p>
+                        </div>
+                        <div id="unit">
+                            <p>km</p>
+                        </div>
+                    </div>
+                    <div id="wind">
+                        <img width="30" height="30"
+                            src="https://www.animatedimages.org/data/media/150/animated-windmill-image-0030.gif"
+                            alt="wind" / />
+                        <div id="info">
+                            <div id="winddirection">
+                                <div id="value">
+                                    <p>N->E</p>
+                                </div>
+                            </div>
+                            <div id="windspeed">
+                                <div id="value">
+                                    <p>5</p>
+                                </div>
+                                <div id="unit">
+                                    <p>km/h</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="compass">
+                            <img width="50" height="50" src="https://img.icons8.com/ios-filled/100/compass-north.png"
+                                alt="compass-north" />
+                        </div>
+                    </div>
+                    <div id="sunmoonriseset">
+                        <div id="rise">
+                            <div id="sun">
+                                <div id="sunrisImg">
+                                    <img width="35" height="35" src="./assets/icons8-sunrise.gif" alt="sunrise" />
+                                </div>
+                                <div id="value">
+                                    <p>5:00</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="set">
+                            <div id="sun">
+                                <div id="sunsetImg">
+                                    <img width="35" height="35" src="./assets/icons8-sunset.gif" alt="sunset" />
+                                </div>
+                                <div id="value">
+                                    <p>17:59</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div id="subothers" class="subotherElement">
+                    <div id="humidity">
+                        <label for="humidity" title="Humidity">
+                            <img width="35" height="35" src="https://img.icons8.com/stickers/100/humidity.png"
+                                alt="humidity" /> </label>
+                        <div id="humidityValue">
+                            <div id="value">
+                                <p>40</p>
+                            </div>
+                            <div id="unit">
+                                <p>%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="uvindex">
+                        <label for="uvindex">
+                            <img width="50" height="50"
+                                src="https://img.icons8.com/external-bearicons-flat-bearicons/64/external-UV-alert-and-warning-bearicons-flat-bearicons.png"
+                                alt="external-UV-alert-and-warning-bearicons-flat-bearicons" />
+                        </label>
+                        <div id="uvindexValue">
+                            <div id="value">
+                                <p>9</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="pressure">
+                        <label for="pressure"><img width="50" height="50"
+                                src="https://img.icons8.com/officel/40/pressure.png" alt="pressure" /></label>
+                        <div id="pressureValue">
+                            <div id="value">
+                                <p>1000</p>
+                            </div>
+                            <div id="unit">
+                                <p>mBar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="precipitation">
+                        <label for="rain">
+                            <img width="35" height="35" src="https://img.icons8.com/officel/80/rain.png" alt="rain" />
+                        </label>
+                        <div id="precipitationValue">
+                            <div id="value">
+                                <p>5</p>
+                            </div>
+                            <div id="unit">
+                                <p>mm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dew">
+                        <label for="dew">
+                            <img width="35" height="35"
+                                src="https://img.icons8.com/external-smashingstocks-flat-smashing-stocks/66/external-Dew-nature-smashingstocks-flat-smashing-stocks.png"
+                                alt="external-Dew-nature-smashingstocks-flat-smashing-stocks" />
+                        </label>
+                        <div id="dewValue">
+                            <div id="value">
+                                <p>26</p>
+                            </div>
+                            <div id="unit">
+                                <p>°C</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ... (previous HTML code) ... -->
+                <div id="feelslike">
+                    <label for="feelslikeTemp">Feels Like</label>
+                    <div id="temperatureFeelsLike">
+                        <div id="value">
+                            <p>33</p>
+                        </div>
+                        <div id="unit">
+                            <p>°C</p>
+                        </div>
+                    </div>
+                    <div id="temperatureMaxMinFeelsLike">
+                        <div id="temperatureMaxFeelsLike">
+                            <div id="value">
+                                <p>33</p>
+                            </div>
+                            <div id="unit">
+                                <p>°C</p>
+                            </div>
+                        </div>
+                        <span>/</span>
+                        <div id="temperatureMinFeelsLike">
+                            <div id="value">
+                                <p>31</p>
+                            </div>
+                            <div id="unit">
+                                <p>°C</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+
+        <section id="forecast">
+            <div id="forecast-type">
+                <p>Daily Forecast</p>
+            </div>
+
+           <div id="daily-data">
+         
+            </div>
+        </section>
+        <div class="credit">
+            <p>Powered by</p>
+            <a href="https://www.visualcrossing.com">
+                <img src="https://www.visualcrossing.com/images/vclogo.svg" alt="Visual Crossing Logo">
+            </a>
+        </div>
+    </main>
+    <script src="./app.js" type="module"></script>
+    
+</body>
+
+</html>
